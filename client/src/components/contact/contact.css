@@ -1,0 +1,103 @@
+
+.conctInfo{
+    display: flex;
+}
+
+.contactText{
+    font-size: 12px;
+}
+
+.loc, .open, .phone, .email{
+        width: 300px;
+        margin: 22px;
+        padding: 10px;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        float: left; 
+}
+
+.loc:hover, .open:hover, .phone:hover, .email:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  }
+
+.spanContact{
+    color: white;
+    font-size: 25px;
+}
+.inputContact{
+    margin-top: 15px;
+}
+  .contactForm{
+    margin: 100px auto; 
+    background-image: linear-gradient(to right top, #78cee2, #5dc0ce, #43b2b9, #27a4a2, #01968b);
+    width: 750px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.contact form div{
+    display: flex;
+    
+}
+.contact h1{
+    text-align: center;
+    font-size: 30px;
+}
+.contact textarea{
+    border: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    resize: none;
+}
+.contact textarea,
+.contact input{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+.contact form{
+    padding: 30px;
+    
+}
+.contact .btn7{
+    padding-bottom: 10px;
+    margin-bottom:10px;
+}
+.btn7{
+    background-color: #ff9343 ;
+    color: white;
+  width: 100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+    .contact h4{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contact form div{
+        flex-direction: column; 
+    }
+
+    .contact input{
+        width: 100%;
+ 
+    }
+
+    .contactForm{
+        margin: 50px auto; 
+        width: 100%;
+    }
+
+    .contactInfo{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
