@@ -33,7 +33,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "http-server ./build -p=8080 -a=0.0.0.0",
     "serve": "http-server ./build -p=8080 -a=0.0.0.0",
     "build": "react-scripts build",
     "test": "react-scripts test",

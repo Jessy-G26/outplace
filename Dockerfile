@@ -6,10 +6,12 @@ COPY package.json package-lock.json ./
 # Install the dependencies and make the folder
 RUN npm install && mkdir /app && mv ./node_modules ./app
 
+RUN npm build
+
 WORKDIR /app
 
 COPY . /app
 
 EXPOSE 3000
 
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["npm", "serve"]
