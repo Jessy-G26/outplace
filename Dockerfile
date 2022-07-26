@@ -1,17 +1,15 @@
 FROM node:18.6.0-alpine3.15
-# FROM node:16
 
 # copy the package.json to install dependencies
 COPY package.json package-lock.json ./
 
 # Install the dependencies and make the folder
-# RUN npm install nodemon
-RUN npm install && mkdir /api && mv ./node_modules ./api
+RUN npm install && mkdir /app && mv ./node_modules ./app
 
-WORKDIR /api
+WORKDIR /app
 
-COPY . /api
+COPY . /app
 
-EXPOSE 8800
+EXPOSE 3000
 
 ENTRYPOINT ["npm", "start"]
